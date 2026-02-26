@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Spin Wheel | Pro Decision Maker Tool</title>
+    <meta name="description" content="Use our free, fair random picker wheel to make decisions. Perfect for teachers, raffles, and games.">
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Random Decision Wheel",
+      "operatingSystem": "Web",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": { "@type": "Offer", "price": "0" }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SpinDecide</div>
+        <ul class="nav-links">
+            <li><a href="#wheel-section">Wheel</a></li>
+            <li><a href="#how-to">How it Works</a></li>
+            <li><a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="wheel-section" class="hero">
+            <div class="container">
+                <div class="wheel-wrapper">
+                    <div class="pointer"></div>
+                    <canvas id="wheel" width="500" height="500"></canvas>
+                    <button id="spin-btn">SPIN</button>
+                </div>
+
+                <div class="input-card">
+                    <h3>Enter Options</h3>
+                    <p>Enter one option per line</p>
+                    <textarea id="options-input" rows="8">Yes&#10;No&#10;Maybe&#10;Spin Again</textarea>
+                    <button id="update-btn">Update Wheel</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to" class="content-area">
+            <h2>Why Use a Random Decision Wheel?</h2>
+            <p>Making decisions can be exhausting. Psychologists call this <strong>decision fatigue</strong>. Our tool helps bypass the mental stress by providing a fair, randomized outcome for your daily choices.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>For Teachers</h3>
+                    <p>Pick students for presentations or group activities fairly and randomly.</p>
+                </div>
+                <div class="card">
+                    <h3>For Giveaways</h3>
+                    <p>Run transparent raffles for your social media followers easily.</p>
+                </div>
+                <div class="card">
+                    <h3>For Daily Life</h3>
+                    <p>Stop arguing over where to eat dinner. Let the wheel decide!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpinDecide Tool. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
